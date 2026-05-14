@@ -138,25 +138,6 @@ black .
 flake8 .
 ```
 
-### CI/CD Pipeline
-
-The project uses GitHub Actions for continuous integration and deployment:
-
-1. **Testing**: Runs on every push and pull request
-   - Unit tests with pytest
-   - Code coverage reporting
-   - Linting with flake8
-   - Code formatting check with black
-
-2. **Deployment**: Runs on main branch after successful tests
-   - Deploys to Streamlit Cloud
-   - Requires STREAMLIT_API_KEY secret
-
-To set up the CI/CD pipeline:
-1. Fork the repository
-2. Add your STREAMLIT_API_KEY to repository secrets
-3. Enable GitHub Actions in your repository settings
-
 ## Project Structure
 
 ```
